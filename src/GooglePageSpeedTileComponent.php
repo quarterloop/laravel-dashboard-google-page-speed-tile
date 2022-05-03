@@ -14,12 +14,11 @@ class GooglePageSpeedTileComponent extends Component
         $this->position = $position;
     }
 
+
     public function render()
     {
-        $googlePageSpeedStore = GooglePageSpeedStore::make();
-
-        return view('google-page-speed-tile::tile', [
-            'pageSpeed' => $googlePageSpeedStore->getData()
+        return view('dashboard-google-page-speed-tile::tile', [
+            'data' => GooglePageSpeedStore::make()->getData(),
         ]);
     }
 }

@@ -9,9 +9,6 @@ class GooglePageSpeedTileServiceProvider extends ServiceProvider
 {
     public function boot()
     {
-
-        Livewire::component('google-page-speed-tile', GooglePageSpeedTileComponent::class);
-
         if ($this->app->runningInConsole()) {
             $this->commands([
                 FetchDataFromApiCommand::class,
@@ -23,5 +20,7 @@ class GooglePageSpeedTileServiceProvider extends ServiceProvider
         ], 'dashboard-google-page-speed-tile-views');
 
         $this->loadViewsFrom(__DIR__ . '/../resources/views', 'dashboard-google-page-speed-tile');
+
+        Livewire::component('google-page-speed-tile', GooglePageSpeedTileComponent::class);
     }
 }
