@@ -12,7 +12,7 @@ class GooglePageSpeedTileServiceProvider extends ServiceProvider
     {
         if ($this->app->runningInConsole()) {
             $this->commands([
-                FetchGooglePageSpeedCommand::class -> namespace($this->namespace),
+                FetchGooglePageSpeedCommand::class,
             ]);
         }
 
