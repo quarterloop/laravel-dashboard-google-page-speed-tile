@@ -5,7 +5,7 @@ namespace quaterloop\GooglePageSpeedTile;
 use Illuminate\Support\ServiceProvider;
 use Livewire\Livewire;
 
-class MyTileServiceProvider extends ServiceProvider
+class GooglePageSpeedTileServiceProvider extends ServiceProvider
 {
     public function boot()
     {
