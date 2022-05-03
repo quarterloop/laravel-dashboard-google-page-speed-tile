@@ -1,6 +1,6 @@
 <?php
 
-namespace SKOUZ\GooglePageSpeedTile;
+namespace quaterloop\GooglePageSpeedTile;
 
 use Illuminate\Support\ServiceProvider;
 use Livewire\Livewire;

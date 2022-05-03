@@ -1,6 +1,6 @@
 <?php
 
-namespace SKOUZ\GooglePageSpeedTile;
+namespace quaterloop\GooglePageSpeedTile;
 
 use Spatie\Dashboard\Models\Tile;
 
