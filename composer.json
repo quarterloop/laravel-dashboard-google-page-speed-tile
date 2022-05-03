@@ -1,16 +1,16 @@
 {
     "name": ":vendor/:package_name",
-    "description": ":package_description",
+    "description": "A google page speed tile for the Laravel Dashboard",
     "keywords": [
-        ":vendor",
-        ":package_name"
+        "quaterloop",
+        "laravel-dashboard-google-page-speed-tile"
     ],
-    "homepage": "https://github.com/:vendor/:package_name",
+    "homepage": "https://github.com/quaterloop/laravel-dashboard-google-page-speed-tile",
     "license": "MIT",
     "authors": [
         {
-            "name": ":author_name",
-            "email": ":author_email",
+            "name": ":Gero Wallisch",
+            "email": ":gero@gerowallisch.com",
             "homepage": "https://:vendor.be",
             "role": "Developer"
         }
@@ -24,12 +24,12 @@
     },
     "autoload": {
         "psr-4": {
-            "Spatie\\MyTile\\": "src"
+            "quaterloop\\GooglePageSpeedTile\\": "src"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Spatie\\MyTile\\Tests\\": "tests"
+            "quaterloop\\GooglePageSpeedTile\\Tests\\": "tests"
         }
     },
     "scripts": {
@@ -43,7 +43,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Spatie\\MyTile\\MyTileServiceProvider"
+                "quaterloop\\GooglePageSpeedTile\\GooglePageSpeedTileServiceProvider"
             ]
         }
     },
