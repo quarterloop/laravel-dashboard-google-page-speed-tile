@@ -1,5 +1,5 @@
 {
-    "name": ":vendor/:package_name",
+    "name": "quaterloop/laravel-dashboard-google-page-speed-tile",
     "description": "A google page speed tile for the Laravel Dashboard",
     "keywords": [
         "quaterloop",
@@ -10,7 +10,7 @@
     "authors": [
         {
             "name": ":Gero Wallisch",
-            "email": ":wallisch@skouz.de",
+            "email": "wallisch@skouz.de",
             "homepage": "https://skouz.de",
             "role": "Developer"
         }
