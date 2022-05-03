@@ -1,6 +1,6 @@
 <?php
 
-namespace Spatie\MyTile\Tests;
+namespace quaterloop\GooglePageSpeedTile\Tests;
 
 use PHPUnit\Framework\TestCase;
 
