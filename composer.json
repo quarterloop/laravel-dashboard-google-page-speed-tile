@@ -43,7 +43,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "quaterloop\\GooglePageSpeedTile\\GooglePageSpeedTileServiceProvider"
+                "quaterloop/GooglePageSpeedTile/GooglePageSpeedTileServiceProvider"
             ]
         }
     },
