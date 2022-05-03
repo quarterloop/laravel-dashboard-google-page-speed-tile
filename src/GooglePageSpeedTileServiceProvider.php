@@ -4,6 +4,7 @@ namespace quaterloop\GooglePageSpeedTile;
 
 use Illuminate\Support\ServiceProvider;
 use Livewire\Livewire;
+use quaterloop\GooglePageSpeedTile\Commands\FetchGooglePageSpeedCommand;
 
 class GooglePageSpeedTileServiceProvider extends ServiceProvider
 {
@@ -11,7 +12,7 @@ class GooglePageSpeedTileServiceProvider extends ServiceProvider
     {
         if ($this->app->runningInConsole()) {
             $this->commands([
-                FetchDataFromApiCommand::class,
+                FetchGooglePageSpeedCommand::class,
             ]);
         }
 

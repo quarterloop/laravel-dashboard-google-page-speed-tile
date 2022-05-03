@@ -3,8 +3,10 @@
 namespace quaterloop\GooglePageSpeedTile;
 
 use Illuminate\Console\Command;
+use quaterloop\GooglePageSpeedTile\Services\GooglePageSpeedAPI;
+use quaterloop\GooglePageSpeedTile\GooglePageSpeedStore;
 
-class FetchDataFromApiCommand extends Command
+class FetchGooglePageSpeedCommand extends Command
 {
     protected $signature = 'dashboard:fetch-data-from-google-page-speed';
 
