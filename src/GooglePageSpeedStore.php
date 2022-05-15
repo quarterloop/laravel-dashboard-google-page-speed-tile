@@ -15,7 +15,7 @@ class GooglePageSpeedStore
 
     public function __construct()
     {
-        $this->tile = Tile::firstOrCreateForName("googlePageSpeed");
+        $this->tile = Tile::firstOrCreateForName("pageSpeedDesktop");
     }
 
     public function setData(array $data): self
