@@ -8,7 +8,7 @@
                 Desktop
               </span>
               <span class="p-1">
-                {{ ['score'] }}
+                Wert
               </span>
             </div>
           </li>
