@@ -1,6 +1,6 @@
 <?php
 
-namespace quaterloop\GooglePageSpeedTile;
+namespace Quaterloop\GooglePageSpeedTile\Commands;
 
 use Illuminate\Console\Command;
 use quaterloop\GooglePageSpeedTile\Services\GooglePageSpeedAPI;

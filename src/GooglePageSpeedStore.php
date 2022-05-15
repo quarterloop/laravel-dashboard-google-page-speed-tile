@@ -1,6 +1,6 @@
 <?php
 
-namespace quaterloop\GooglePageSpeedTile;
+namespace Quaterloop\GooglePageSpeedTile;
 
 use Spatie\Dashboard\Models\Tile;
 
