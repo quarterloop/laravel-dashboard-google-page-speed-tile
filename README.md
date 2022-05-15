@@ -15,12 +15,19 @@ composer require quaterloop/laravel-dashboard-google-page-speed-tile
 
 ## Usage
 
-In your dashboard view you use the `livewire:my-tile` component.
+In your dashboard view you use the `livewire:google-page-speed-tile` component.
 
 ```html
 <x-dashboard>
     <livewire:google-page-speed-tile position="e7:e16" />
 </x-dashboard>
+```
+
+
+Use the php artisan command to fetch Page Speed data.
+
+``` bash
+php artisan dashboard:fetch-google-page-speed-data
 ```
 
 ## Testing
