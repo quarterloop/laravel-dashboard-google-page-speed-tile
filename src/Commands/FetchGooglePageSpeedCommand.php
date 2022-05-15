@@ -3,8 +3,8 @@
 namespace Quaterloop\GooglePageSpeedTile\Commands;
 
 use Illuminate\Console\Command;
-use quaterloop\GooglePageSpeedTile\Services\GooglePageSpeedAPI;
-use quaterloop\GooglePageSpeedTile\GooglePageSpeedStore;
+use Quaterloop\GooglePageSpeedTile\Services\GooglePageSpeedAPI;
+use Quaterloop\GooglePageSpeedTile\GooglePageSpeedStore;
 
 class FetchGooglePageSpeedCommand extends Command
 {

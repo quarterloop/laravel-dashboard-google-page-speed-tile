@@ -4,7 +4,7 @@ namespace Quaterloop\GooglePageSpeedTile;
 
 use Illuminate\Support\ServiceProvider;
 use Livewire\Livewire;
-use quaterloop\GooglePageSpeedTile\Commands\FetchGooglePageSpeedCommand;
+use Quaterloop\GooglePageSpeedTile\Commands\FetchGooglePageSpeedCommand;
 
 class GooglePageSpeedTileServiceProvider extends ServiceProvider
 {
