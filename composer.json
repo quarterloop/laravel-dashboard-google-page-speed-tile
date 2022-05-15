@@ -24,7 +24,7 @@
     },
     "autoload": {
         "psr-4": {
-            "quaterloop\\GooglePageSpeedTile\\": "src"
+            "Quaterloop\\GooglePageSpeedTile\\": "src"
         }
     },
     "scripts": {
@@ -36,7 +36,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "quaterloop\\GooglePageSpeedTile\\GooglePageSpeedTileServiceProvider"
+                "Quaterloop\\GooglePageSpeedTile\\GooglePageSpeedTileServiceProvider"
             ]
         }
     },
