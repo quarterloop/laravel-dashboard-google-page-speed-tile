@@ -3,22 +3,24 @@
 namespace Quaterloop\GooglePageSpeedTile\Commands;
 
 use Illuminate\Console\Command;
+use Quaterloop\GooglePageSpeedTile\Services\GooglePageSpeedAPI;
+use Quaterloop\GooglePageSpeedTile\GooglePageSpeedStore;
 
 class FetchGooglePageSpeedCommand extends Command
 {
-    protected $signature = 'dashboard:fetch-data-from-google-page-speed';
+    protected $signature = 'dashboard:fetch-google-page-speed-data';
 
-    protected $description = 'Fetch data from Google Page Speed';
+    protected $description = 'Fetch Google Page Speed data';
 
     public function handle()
     {
-        $this->info('Fetching Page Speed...');
 
+        $pageSpeed = GooglePageSpeedAPI::getPageSpeed(
+            config('dashboard.tiles.google_page_speed.url'),
+            config('dashboard.tiles.google_page_speed.key'),
+        );
 
-        $data = Http::get("https://pagespeedonline.googleapis.com/pagespeedonline/v5/runPagespeed?url=https%3A%2F%2Fskouz.de&category=CATEGORY_UNSPECIFIED&strategy=STRATEGY_UNSPECIFIED&key=AIzaSyDHA5nTjanJxbpEwgNtiTT2paVy0H_jtKc")->json();
-
-
-        GooglePageSpeedStore::make()->setData($data);
+        GooglePageSpeedStore::make()->setData($pageSpeed);
 
         $this->info('All done!');
     }
