@@ -3,7 +3,7 @@
 namespace Quaterloop\GooglePageSpeedTile\Commands;
 
 use Illuminate\Console\Command;
-use Quaterloop\GooglePageSpeedTile\Services\GooglePageSpeedAPI;
+use Quaterloop\GooglePageSpeedTile\Services\GooglePageSpeedMobileAPI;
 use Quaterloop\GooglePageSpeedTile\GooglePageSpeedMobileStore;
 
 class FetchGooglePageSpeedMobileCommand extends Command
@@ -12,7 +12,7 @@ class FetchGooglePageSpeedMobileCommand extends Command
 
     protected $description = 'Fetch Google Page Speed Mobile data';
 
-    public function handle(GooglePageSpeedAPI $google_page_speed_api)
+    public function handle(GooglePageSpeedMobileAPI $google_page_speed_api)
     {
 
       $this->info('Fetching data...');
