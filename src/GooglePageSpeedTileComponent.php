@@ -18,7 +18,8 @@ class GooglePageSpeedTileComponent extends Component
     public function render()
     {
         return view('dashboard-google-page-speed-tile::tile', [
-            'data' => GooglePageSpeedStore::make()->getData(),
+            'desktop' => GooglePageSpeedDesktopStore::make()->getData(),
+            'mobile' => GooglePageSpeedMobileStore::make()->getData(),
         ]);
     }
 }

@@ -8,17 +8,17 @@
                 Desktop
               </span>
               <span class="p-1">
-                {{ $data['score']*100 }}
+                {{ $desktop['score']*100 }}
               </span>
             </div>
           </li>
           <li class="p-1">
             <div class="flex justify-center">
               <span class="p-1 rounded-sm">
-                Desktop
+                Mobile
               </span>
               <span class="p-1">
-                {{ $desktop['score']*100 }}
+                {{ $mobile['score']*100 }}
               </span>
             </div>
           </li>
