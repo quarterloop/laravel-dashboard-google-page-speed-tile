@@ -8,7 +8,17 @@
                 Desktop
               </span>
               <span class="p-1">
-                Wert
+                {{ $data['score']*100 }}
+              </span>
+            </div>
+          </li>
+          <li class="p-1">
+            <div class="flex justify-center">
+              <span class="p-1 rounded-sm">
+                Desktop
+              </span>
+              <span class="p-1">
+                {{ $desktop['score']*100 }}
               </span>
             </div>
           </li>
