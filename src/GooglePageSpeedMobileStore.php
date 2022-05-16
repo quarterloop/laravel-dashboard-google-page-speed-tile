@@ -4,7 +4,7 @@ namespace Quaterloop\GooglePageSpeedTile;
 
 use Spatie\Dashboard\Models\Tile;
 
-class GooglePageSpeedStore
+class GooglePageSpeedMobileStore
 {
     private Tile $tile;
 
@@ -15,7 +15,7 @@ class GooglePageSpeedStore
 
     public function __construct()
     {
-        $this->tile = Tile::firstOrCreateForName("pageSpeedDesktop");
+        $this->tile = Tile::firstOrCreateForName("pageSpeedMobile");
     }
 
     public function setData(array $data): self
