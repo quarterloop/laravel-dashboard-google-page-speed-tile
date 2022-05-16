@@ -29,7 +29,7 @@ class FetchGooglePageSpeedDesktopCommand extends Command
     }
 }
 
-class FetchGooglePageSpeedDesktopCommand extends Command
+class FetchGooglePageSpeedMobileCommand extends Command
 {
     protected $signature = 'dashboard:fetch-google-page-speed-mobile-data';
 
