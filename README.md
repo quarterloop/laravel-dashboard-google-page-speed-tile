@@ -30,6 +30,11 @@ Use the php artisan command to fetch Page Speed data.
 php artisan dashboard:fetch-google-page-speed-data
 ```
 
+Use this snippet to schedule the command in app/Console/Commands/Kernel.php
+``` bash
+$schedule->command(\Quaterloop\GooglePageSpeedTile\Commands\FetchGooglePageSpeedCommand::class)->everyMinute();
+```
+
 ## Testing
 
 ``` bash
