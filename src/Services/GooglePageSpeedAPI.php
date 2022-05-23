@@ -1,6 +1,6 @@
 <?php
 
-namespace Quaterloop\GooglePageSpeedTile\Services;
+namespace Quarterloop\GooglePageSpeedTile\Services;
 
 use Illuminate\Support\Facades\Http;
 

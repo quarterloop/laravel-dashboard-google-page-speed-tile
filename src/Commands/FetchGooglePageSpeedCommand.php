@@ -1,11 +1,11 @@
 <?php
 
-namespace Quaterloop\GooglePageSpeedTile\Commands;
+namespace Quarterloop\GooglePageSpeedTile\Commands;
 
 use Illuminate\Console\Command;
-use Quaterloop\GooglePageSpeedTile\Services\GooglePageSpeedAPI;
-use Quaterloop\GooglePageSpeedTile\GooglePageSpeedDesktopStore;
-use Quaterloop\GooglePageSpeedTile\GooglePageSpeedMobileStore;
+use Quarterloop\GooglePageSpeedTile\Services\GooglePageSpeedAPI;
+use Quarterloop\GooglePageSpeedTile\GooglePageSpeedDesktopStore;
+use Quarterloop\GooglePageSpeedTile\GooglePageSpeedMobileStore;
 
 class FetchGooglePageSpeedCommand extends Command
 {

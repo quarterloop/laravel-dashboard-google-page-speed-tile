@@ -1,6 +1,6 @@
 <?php
 
-namespace Quaterloop\GooglePageSpeedTile;
+namespace Quarterloop\GooglePageSpeedTile;
 
 use Livewire\Component;
 

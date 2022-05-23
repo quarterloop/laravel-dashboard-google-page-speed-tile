@@ -1,10 +1,10 @@
 <?php
 
-namespace Quaterloop\GooglePageSpeedTile;
+namespace Quarterloop\GooglePageSpeedTile;
 
 use Illuminate\Support\ServiceProvider;
 use Livewire\Livewire;
-use Quaterloop\GooglePageSpeedTile\Commands\FetchGooglePageSpeedCommand;
+use Quarterloop\GooglePageSpeedTile\Commands\FetchGooglePageSpeedCommand;
 
 class GooglePageSpeedTileServiceProvider extends ServiceProvider
 {
