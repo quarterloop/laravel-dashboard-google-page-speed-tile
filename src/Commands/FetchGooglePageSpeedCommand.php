@@ -16,22 +16,28 @@ class FetchGooglePageSpeedCommand extends Command
     public function handle(GooglePageSpeedAPI $google_page_speed_api)
     {
 
-      $this->info('Fetching desktop data ...');
+        $this->info('Fetching desktop data ...');
 
         $pageSpeedDesktop = $google_page_speed_api::getPageSpeedDesktop(
             config('dashboard.tiles.google_page_speed.url'),
             config('dashboard.tiles.google_page_speed.key'),
         );
 
-      $this->info('Fetching mobile data ...');
+        GooglePageSpeedDesktopStore::make()->setData($pageSpeedDesktop);
+
+        $this->info('Stored desktop data ...');
+
+
+        $this->info('Fetching mobile data ...');
 
         $pageSpeedMobile = $google_page_speed_api::getPageSpeedMobile(
             config('dashboard.tiles.google_page_speed.url'),
             config('dashboard.tiles.google_page_speed.key'),
         );
 
-        GooglePageSpeedDesktopStore::make()->setData($pageSpeedDesktop);
         GooglePageSpeedMobileStore::make()->setData($pageSpeedMobile);
+
+        $this->info('Stored desktop data ...');
 
         $this->info('All done!');
     }
