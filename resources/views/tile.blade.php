@@ -39,11 +39,7 @@
         </ul>
         <p class="text-dimmed lowercase tracking-wide tabular-nums text-center absolute bottom-0 left-0 mr-auto ml-auto mb-5 w-full"
            style="font-size: 12px;">
-           {{ $lastFetchedTime }}
-         </p>
-        <p class="text-dimmed lowercase tracking-wide tabular-nums text-center absolute bottom-0 left-0 mr-auto ml-auto mb-2 w-full"
-           style="font-size: 12px;">
-           {{ $lastFetchedDate }}
-         </p>
+           {{ $lastFetchedDate }} - {{ $lastFetchedTime }}
+        </p>
     </div>
 </x-dashboard-tile>
