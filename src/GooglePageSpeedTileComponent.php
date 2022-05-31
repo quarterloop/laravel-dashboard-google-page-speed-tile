@@ -18,12 +18,13 @@ class GooglePageSpeedTileComponent extends Component
     public function render()
     {
 
-      $pageSpeedStore = GooglePageSpeedDesktopStore::make();
+      $pageSpeedDesktopStore = GooglePageSpeedDesktopStore::make();
+      $pageSpeedMobileStore  = GooglePageSpeedMobileStore::make();
 
         return view('dashboard-google-page-speed-tile::tile', [
             'website'           => config('dashboard.tiles.google_page_speed.url'),
-            'desktopScore'      => $pageSpeedStore->getData()['categories']['performance']['score'],
-            'mobileScore'       => $pageSpeedStore->getData()['categories']['performance']['score'],
+            'desktopScore'      => $pageSpeedDesktopStore->getData()['categories']['performance']['score'],
+            'mobileScore'       => $pageSpeedMobileStore->getData()['categories']['performance']['score'],
             'lastUpdateTime'  => date('H:i:s', strtotime($pageSpeedStore->getLastUpdateTime())),
             'lastUpdateDate'  => date('d.m.Y', strtotime($pageSpeedStore->getLastUpdateDate())),
         ]);
