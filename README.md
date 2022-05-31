@@ -32,12 +32,17 @@ php artisan dashboard:fetch-google-page-speed-data
 
 Use this snippet to schedule the command in app/Console/Commands/Kernel.php
 ``` bash
-$schedule->command(\Quarterloop\GooglePageSpeedTile\Commands\FetchGooglePageSpeedCommand::class)->everyMinute();
+$schedule->command(\Quarterloop\GooglePageSpeedTile\Commands\FetchGooglePageSpeedCommand::class)->twiceDaily();
+```
+
+Also add the following code snippet in app/console/kernel.php under "$commands" in a new line:
+``` bash
+\Quarterloop\GooglePageSpeedTile\Commands\FetchGooglePageSpeedCommand::class,
 ```
 
 Insert this in routes/web.php - this enables the manual-refresh-button in tile
 ``` bash
-Route::get('/refresh', function() {
+Route::get('/refresh-page-speed', function() {
   Artisan::call('dashboard:fetch-google-page-speed-data');
   return back();
 })->name('fetch-page-speed');
