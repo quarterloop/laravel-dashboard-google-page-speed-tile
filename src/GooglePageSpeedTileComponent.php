@@ -25,8 +25,8 @@ class GooglePageSpeedTileComponent extends Component
             'website'           => config('dashboard.tiles.google_page_speed.url'),
             'desktopScore'      => $pageSpeedDesktopStore->getData()['categories']['performance']['score'],
             'mobileScore'       => $pageSpeedMobileStore->getData()['categories']['performance']['score'],
-            'lastUpdateTime'  => date('H:i:s', strtotime($pageSpeedStore->getLastUpdateTime())),
-            'lastUpdateDate'  => date('d.m.Y', strtotime($pageSpeedStore->getLastUpdateDate())),
+            'lastUpdateTime'  => date('H:i:s', strtotime($pageSpeedDesktopStore->getLastUpdateTime())),
+            'lastUpdateDate'  => date('d.m.Y', strtotime($pageSpeedDesktopStore->getLastUpdateDate())),
         ]);
     }
 }
