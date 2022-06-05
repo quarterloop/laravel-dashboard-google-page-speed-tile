@@ -6,6 +6,7 @@ use Illuminate\Console\Command;
 use Quarterloop\GooglePageSpeedTile\Services\GooglePageSpeedAPI;
 use Quarterloop\GooglePageSpeedTile\GooglePageSpeedDesktopStore;
 use Quarterloop\GooglePageSpeedTile\GooglePageSpeedMobileStore;
+use Session;
 
 class FetchGooglePageSpeedCommand extends Command
 {
@@ -19,7 +20,7 @@ class FetchGooglePageSpeedCommand extends Command
         $this->info('Fetching desktop data ...');
 
         $pageSpeedDesktop = $google_page_speed_api::getPageSpeedDesktop(
-            config('dashboard.tiles.google_page_speed.url'),
+            Session::get('website'),
             config('dashboard.tiles.google_page_speed.key'),
         );
 
