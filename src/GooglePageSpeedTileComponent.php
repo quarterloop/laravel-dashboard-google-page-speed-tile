@@ -23,8 +23,8 @@ class GooglePageSpeedTileComponent extends Component
 
         return view('dashboard-google-page-speed-tile::tile', [
             'website'           => config('dashboard.tiles.google_page_speed.url'),
-            'desktopScore'      => $pageSpeedDesktopStore->getData()['categories']['performance']['score'],
-            'mobileScore'       => $pageSpeedMobileStore->getData()['categories']['performance']['score'],
+            'desktopScore'      => $pageSpeedDesktopStore->getData(),
+            'mobileScore'       => $pageSpeedMobileStore->getData(),
             'lastUpdateTime'  => date('H:i:s', strtotime($pageSpeedDesktopStore->getLastUpdateTime())),
             'lastUpdateDate'  => date('d.m.Y', strtotime($pageSpeedDesktopStore->getLastUpdateDate())),
         ]);
