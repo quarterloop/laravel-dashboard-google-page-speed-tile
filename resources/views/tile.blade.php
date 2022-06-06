@@ -22,7 +22,7 @@
                 </svg>
               </span>
               <span class="pl-1 font-small text-xs">
-                {{ $desktopScore*100 }}%
+                {{ $desktopScore['categories']['performance']['score']*100 }}%
 
               </span>
             </div>
@@ -35,7 +35,7 @@
                 </svg>
               </span>
               <span class="pl-1 font-small text-xs">
-                {{ $mobileScore*100 }}%
+                {{ $mobileScore['categories']['performance']['score']*100 }}%
               </span>
             </div>
           </li>
