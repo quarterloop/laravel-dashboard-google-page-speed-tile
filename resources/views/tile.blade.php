@@ -35,7 +35,7 @@
                 </svg>
               </span>
               <span class="pl-1 font-small text-xs">
-                {{!! $mobileScore['categories']['performance']['score']*100 !!}}%
+                {{ $mobileScore['categories']['performance']['score']*100 }}%
               </span>
             </div>
           </li>
