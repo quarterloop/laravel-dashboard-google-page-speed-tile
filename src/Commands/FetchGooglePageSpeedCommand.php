@@ -32,7 +32,7 @@ class FetchGooglePageSpeedCommand extends Command
         $this->info('Fetching mobile data ...');
 
         $pageSpeedMobile = $google_page_speed_api::getPageSpeedMobile(
-            config('dashboard.tiles.google_page_speed.url'),
+            Session::get('website'),
             config('dashboard.tiles.google_page_speed.key'),
         );
 
