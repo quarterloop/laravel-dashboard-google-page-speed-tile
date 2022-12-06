@@ -22,7 +22,7 @@
                 </svg>
               </span>
               <span class="pl-1 font-small text-xs">
-                {{!! $desktopScore['categories']['performance']['score']*100 !!}}%
+                {{ $desktopScore['categories']['performance']['score']*100 }}%
 
               </span>
             </div>
